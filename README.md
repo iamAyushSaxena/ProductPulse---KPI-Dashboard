@@ -200,8 +200,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👤 Author
 
 **Ayush Saxena**
-- GitHub: [iamAyushSaxena] (https://github.com/iamAyushSaxena)
-- LinkedIn: [Ayush Saxena] (linkedin.com/in/ayush-saxena-39a300225)
+- GitHub: [iamAyushSaxena](https://github.com/iamAyushSaxena)
+- LinkedIn: [Ayush Saxena](https://www.linkedin.com/in/ayush-saxena-39a300225/)
 - Email: aysaxena8880@gmail.com
 
 ---
@@ -227,4 +227,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 
 ⭐ **If you find this project helpful, please consider giving it a star!**
+
 
