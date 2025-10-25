@@ -1,8 +1,11 @@
 # 📊 ProductPulse - Interactive KPI Dashboard for Product Analytics
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![Streamlit](https://img.shields.io/badge/Streamlit-1.28.0-red.svg)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.28.0-FF4B4B.svg)
+![Pandas](https://img.shields.io/badge/Pandas-2.1.1-150458.svg)
+![Plotly](https://img.shields.io/badge/Plotly-5.17.0-3F4F75.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Status](https://img.shields.io/badge/Status-Active-success.svg)
 
 **ProductPulse** is a lightweight, interactive dashboard that helps Product Managers monitor key performance indicators (KPIs) and make data-driven decisions. Built with Python and Streamlit, it provides real-time insights into user engagement, retention, and product health.
 
@@ -236,6 +239,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 
 ⭐ **If you find this project helpful, please consider giving it a star!**
+
 
 
 
