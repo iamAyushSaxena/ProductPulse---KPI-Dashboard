@@ -1,1 +1,40 @@
+name: Test ProductPulse
 
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Generate test data
+      run: |
+        python data/generate_data.py
+    
+    - name: Test metric calculations
+      run: |
+        python -c "
+        from src.metrics import *
+        from src.utils import load_data
+        users_df, nps_df, features_df = load_data()
+        assert users_df is not None
+        retention = calculate_retention_rate(users_df)
+        assert 0 <= retention <= 100
+        print('✅ All tests passed!')
+        "
