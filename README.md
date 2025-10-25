@@ -111,13 +111,22 @@ productpulse/
 ## 🎨 Dashboard Screenshots
 
 ### Main Dashboard
-![Dashboard Overview](https://via.placeholder.com/800x400/3b82f6/ffffff?text=Dashboard+Overview)
+![Dashboard Overview](screenshots/dashboard_overview.png)
+
+### Key Performance Indicators
+![KPI Metrics](screenshots/kpi_metrics.png)
 
 ### Trend Analysis
-![Trend Charts](https://via.placeholder.com/800x400/8b5cf6/ffffff?text=Trend+Analysis)
+![DAU/MAU Chart](screenshots/dau_mau_chart.png)
+
+### NPS Distribution
+![NPS Distribution](screenshots/nps_distribution.png)
 
 ### Feature Adoption
-![Feature Metrics](https://via.placeholder.com/800x400/10b981/ffffff?text=Feature+Adoption)
+![Feature Adoption](screenshots/feature_adoption.png)
+
+### Data Explorer
+![Data Explorer](screenshots/data_explorer.png)
 
 ---
 
@@ -227,5 +236,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 
 ⭐ **If you find this project helpful, please consider giving it a star!**
+
 
 
