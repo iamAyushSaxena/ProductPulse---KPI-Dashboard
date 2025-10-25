@@ -1,0 +1,83 @@
+┌─────────────────────────────────────────────────────────────────┐
+│                    PRODUCTPULSE ARCHITECTURE                    │
+└─────────────────────────────────────────────────────────────────┘
+
+┌──────────────────┐
+│  DATA LAYER      │
+├──────────────────┤
+│ • synthetic_     │
+│   users.csv      │──┐
+│ • synthetic_     │  │
+│   feedback.csv   │  │
+│ • synthetic_     │  │
+│   features.csv   │  │
+└──────────────────┘  │
+                      │
+                      ▼
+            ┌─────────────────┐
+            │  DATA LOADING   │
+            │   (utils.py)    │
+            ├─────────────────┤
+            │ • load_data()   │
+            │ • filter_data() │
+            │ • format_nums() │
+            └─────────────────┘
+                      │
+                      ▼
+            ┌─────────────────────┐
+            │  METRICS ENGINE     │
+            │   (metrics.py)      │
+            ├─────────────────────┤
+            │ • Retention Rate    │
+            │ • Churn Rate        │
+            │ • NPS Calculator    │
+            │ • DAU/MAU Ratio     │
+            │ • Growth Rate       │
+            │ • Feature Adoption  │
+            └─────────────────────┘
+                      │
+                      ▼
+            ┌──────────────────────┐
+            │  VISUALIZATION       │
+            │  (visualizations.py) │
+            ├──────────────────────┤
+            │ • Plotly Charts      │
+            │ • Interactive Graphs │
+            │ • Trend Analysis     │
+            └──────────────────────┘
+                      │
+                      ▼
+            ┌─────────────────────┐
+            │  STREAMLIT UI       │
+            │    (app.py)         │
+            ├─────────────────────┤
+            │ • Dashboard Layout  │
+            │ • Filters/Controls  │
+            │ • Metric Cards      │
+            │ • Data Explorer     │
+            └─────────────────────┘
+                      │
+                      ▼
+            ┌─────────────────────┐
+            │   USER BROWSER      │
+            │  (localhost:8501)   │
+            └─────────────────────┘
+
+
+═══════════════════════════════════════════════════════════════════
+
+                          DATA FLOW
+
+    [CSV Files] 
+         ↓
+    [pandas DataFrame]
+         ↓
+    [Date Filtering]
+         ↓
+    [KPI Calculation] ──→ [Metric Cards]
+         ↓
+    [Chart Generation] ──→ [Interactive Visualizations]
+         ↓
+    [Streamlit Rendering] ──→ [Web Dashboard]
+
+═══════════════════════════════════════════════════════════════════
